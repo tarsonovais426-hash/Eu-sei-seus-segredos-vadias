@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090909">
+<title>Eu Sei Seus Segredos, Vadias — A</title>
+<style>
+:root{--bg:#080808;--red:#c10f2e;--muted:#b8acac}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#eee;font-family:Georgia,'Times New Roman',serif}a{color:inherit;text-decoration:none}
+#gate{position:fixed;inset:0;z-index:99;background:radial-gradient(ellipse at 50% 25%,#361019,#080808 68%);display:flex;align-items:center;justify-content:center;padding:22px;text-align:center}
+.gate-box{width:min(470px,100%);border:1px solid #5b1c2a;padding:clamp(25px,6vw,48px);box-shadow:0 0 60px #8d0b2425;background:#090909e8;position:relative}
+.gate-box:before{content:"A";position:absolute;right:15px;top:-45px;color:#b20f2824;font-size:150px;font-style:italic;pointer-events:none}
+.kicker{font-size:10px;letter-spacing:4px;color:#c9baba}.gate-box h1{font-weight:normal;font-size:clamp(30px,7vw,48px);line-height:1.05;margin:22px 0}.gate-box h1 span{color:var(--red);font-style:italic}.gate-box p{color:#c7bebe;font-style:italic}.gate-form{display:flex;gap:8px;margin-top:25px}.gate-form input{flex:1;min-width:0;background:#080808;border:1px solid #68404a;color:white;padding:13px;font-family:inherit;letter-spacing:2px}.gate-form button{background:#a20f29;color:white;border:0;padding:0 16px;letter-spacing:1px;cursor:pointer}.error{min-height:22px;color:#ef3c57;font-size:13px;margin-top:15px}.gate-foot{font-size:10px;color:#74676a;letter-spacing:2px;margin-top:24px}
+#site{display:none}.top{position:sticky;top:0;z-index:5;background:#080808ee;border-bottom:1px solid #333;display:flex;justify-content:center;gap:clamp(12px,4vw,48px);padding:18px 12px;flex-wrap:wrap;text-transform:uppercase;letter-spacing:3px;font-size:12px}.top a:hover,.red{color:#e31b3c}
+.hero{min-height:300px;padding:55px 20px;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(#0009,#000b),radial-gradient(ellipse at 25% 20%,#4d1018,#090909 62%);border-bottom:1px solid #4a1a21;position:relative;overflow:hidden}.hero:before{content:"A";position:absolute;right:8%;top:-100px;font-size:390px;color:#b20f281c;font-style:italic}.hero h1{font-size:clamp(36px,7vw,76px);font-weight:normal;line-height:.98;max-width:900px;margin:18px auto;text-transform:uppercase;text-shadow:0 3px 25px #000}.hero h1 span{color:#dc1536;font-style:italic}.hero p{color:#c9baba;letter-spacing:2px}
+.wrap{max-width:1120px;margin:auto;padding:34px 22px}.layout{display:grid;grid-template-columns:minmax(0,2fr) minmax(220px,.85fr);gap:30px}.section-title{font-size:14px;letter-spacing:4px;text-transform:uppercase;border-bottom:1px solid #7b1b2a;padding-bottom:10px;margin:0 0 18px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card{border:1px solid #333;background:#0d0d0d;transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-3px);border-color:#9f1a2f}.thumb{height:145px;background:linear-gradient(135deg,#21191b,#090909);display:flex;align-items:center;justify-content:center;color:#b21a32;font-size:58px;text-shadow:0 0 20px #9b1028}.content{padding:14px}.date{font-size:10px;letter-spacing:2px;color:#aaa}.card h3{font-weight:normal;font-size:19px;margin:9px 0}.card p{font-size:13px;line-height:1.55;color:#c0baba}.read{color:#e31b3c;font-size:11px;letter-spacing:2px;text-transform:uppercase}.post-body{display:none;padding:0 14px 16px;color:#d2caca;font-size:14px;line-height:1.7}.post-body.open{display:block}.sidebox{border:1px solid #383030;padding:18px;margin-bottom:20px;background:linear-gradient(145deg,#151010,#090909)}.quote{font-style:italic;color:#e0d2c7;font-size:20px;line-height:1.4}.quote small{display:block;text-align:right;color:#e31b3c;font-size:25px}.sidebox p,.sidebox li{font-size:13px;line-height:1.7;color:#c7bebe}.sidebox ul{list-style:none;padding:0}.sidebox li:before{content:"› ";color:#e31b3c}.search{display:flex;gap:6px;margin-top:10px}.search input{min-width:0;width:100%;background:#090909;border:1px solid #514047;color:#fff;padding:10px}.search button,.submit{background:#8f1025;color:white;border:0;padding:10px 13px;cursor:pointer}.newsletter{margin-top:30px;padding:25px;border:1px dashed #6b2935;text-align:center}.newsletter input{background:#090909;border:1px solid #514047;color:#fff;padding:12px;max-width:300px;width:65%}.notice{font-size:11px;color:#8d8383;margin-top:15px}footer{text-align:center;border-top:1px solid #333;padding:28px;color:#8f8585;font-size:12px;letter-spacing:2px}
+@media(max-width:760px){.layout{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{min-height:260px}.hero:before{font-size:250px;top:-45px}}@media(max-width:480px){.cards{grid-template-columns:1fr}.thumb{height:170px}.top{letter-spacing:2px}.wrap{padding:25px 15px}.gate-form{flex-direction:column}.gate-form button{padding:13px}}
+</style>
+</head>
+<body>
+<section id="gate" aria-label="Entrada protegida">
+  <div class="gate-box">
+    <div class="kicker">VOCÊ FOI AVISADO</div>
+    <h1>EU SEI SEUS SEGREDOS<br><span>VADIAS</span></h1>
+    <p>“Acha mesmo que pode entrar aqui sem permissão?”</p>
+    <form class="gate-form" id="gateForm">
+      <input id="password" type="password" placeholder="Digite a senha..." autocomplete="current-password" aria-label="Senha" required>
+      <button type="submit">ENTRAR ↗</button>
+    </form>
+    <div id="error" class="error" role="status"></div>
+    <div class="gate-foot">SOMENTE PARA QUEM SABE A SENHA · — A</div>
+  </div>
+</section>
+<div id="site">
+<nav class="top"><a href="#inicio" class="red">Início</a><a href="#sobre">Sobre</a><a href="#posts">Posts</a><a href="#categorias">Categorias</a><a href="#contato">Contato</a></nav>
+<header class="hero" id="inicio"><div><div class="kicker">UM BLOG DE SEGREDOS, TEORIAS E MISTÉRIOS</div><h1>Eu sei seus segredos<br><span>vadias</span></h1><p>— A sabe de tudo. Ou quase tudo.</p></div></header>
+<main class="wrap"><div class="layout"><section id="posts">
+<h2 class="section-title">Posts em destaque</h2><div class="cards">
+<article class="card" data-search="alison noite teorias mistério"><div class="thumb">✦</div><div class="content"><div class="date">14 OUT 2026 · TEORIAS</div><h3>O que realmente aconteceu naquela noite?</h3><p>Em Rosewood, todo mundo conta uma versão diferente. E alguém está mentindo.</p><a href="#" class="read" onclick="togglePost(this);return false">Ler mais →</a></div><div class="post-body">A noite do desaparecimento continua cheia de perguntas. Repare nos detalhes, compare as versões e desconfie de quem parece saber demais. Esta é uma teoria de fã, não uma revelação oficial da série.</div></article>
+<article class="card" data-search="mensagens anonimas A celular"><div class="thumb">✉</div><div class="content"><div class="date">12 OUT 2026 · MISTÉRIOS</div><h3>Mensagens que ainda assustam</h3><p>Uma mensagem curta pode mudar tudo. Principalmente quando termina com uma letra.</p><a href="#" class="read" onclick="togglePost(this);return false">Ler mais →</a></div><div class="post-body">As mensagens de A transformam detalhes cotidianos em pistas. Qual mensagem da série mais fez você desconfiar de todo mundo?</div></article>
+<article class="card" data-search="rosewood cidade mentiras lugares"><div class="thumb">⌖</div><div class="content"><div class="date">10 OUT 2026 · ROSEWOOD</div><h3>Rosewood: uma cidade cheia de mentiras</h3><p>Por trás das casas perfeitas, sempre existe algo que ninguém quer contar.</p><a href="#" class="read" onclick="togglePost(this);return false">Ler mais →</a></div><div class="post-body">Rosewood parece tranquila à primeira vista, mas a série constrói seus mistérios por meio de segredos, alianças e suspeitas.</div></article>
+</div><div class="newsletter" id="contato"><h2 class="section-title">Tem um segredo?</h2><p>Esta caixa é demonstrativa e não envia mensagens. Não escreva informações pessoais.</p><form onsubmit="event.preventDefault();alert('Mensagem de demonstração! O blog ainda não envia mensagens.');"><input aria-label="Mensagem" placeholder="Uma ideia fictícia..."><button class="submit">Enviar</button></form></div>
+</section><aside><div class="sidebox"><div class="quote">“Segredos são como fantasmas. Sempre encontram um jeito de aparecer.”<small>— A</small></div></div><div class="sidebox" id="sobre"><h2 class="section-title">Sobre o blog</h2><p>Um cantinho sombrio para fãs de <em>Pretty Little Liars</em>, teorias, personagens, episódios e mistérios de Rosewood.</p><p>Blog de fã, sem vínculo oficial com a série.</p></div><div class="sidebox" id="categorias"><h2 class="section-title">Categorias</h2><ul><li>Teorias e suspeitos</li><li>Personagens</li><li>Episódios</li><li>Livros</li><li>Curiosidades</li><li>Frases e pistas</li></ul></div><div class="sidebox"><h2 class="section-title">Buscar no blog</h2><div class="search"><input id="searchInput" placeholder="Uma palavra..." aria-label="Buscar posts"><button onclick="searchPosts()">⌕</button></div><p id="searchMsg"></p></div><div class="sidebox"><div class="quote">Não se preocupe.<br>Eu sempre estou por perto.<small>— A</small></div></div><p class="notice">Use histórias fictícias. Não publique dados privados de pessoas reais.</p></aside></div></main>
+<footer>EU SEI SEUS SEGREDOS, VADIAS · — A<br><br>UM BLOG DE FÃ · NÃO OFICIAL</footer>
+</div>
+<script>
+/* DEMONSTRAÇÃO: senha no navegador, não é segurança real. Troque o valor abaixo. */
+const DEMO_PASSWORD = "rosewood";
+const gate=document.getElementById('gate'),site=document.getElementById('site');
+document.getElementById('gateForm').addEventListener('submit',function(e){e.preventDefault();const entered=document.getElementById('password').value;if(entered===DEMO_PASSWORD){gate.style.display='none';site.style.display='block';document.body.style.overflow='auto'}else{document.getElementById('error').textContent='Senha incorreta. A está de olho. — A';document.getElementById('password').value='';}});
+function togglePost(link){const body=link.closest('.card').querySelector('.post-body');body.classList.toggle('open');link.textContent=body.classList.contains('open')?'Fechar ↑':'Ler mais →'}
+function searchPosts(){const q=document.getElementById('searchInput').value.toLowerCase().trim();let n=0;document.querySelectorAll('.card[data-search]').forEach(c=>{const show=!q||c.dataset.search.includes(q)||c.innerText.toLowerCase().includes(q);c.style.display=show?'':'none';if(show)n++});document.getElementById('searchMsg').textContent=q?(n+' resultado(s) encontrado(s).'):'Mostrando todos os posts.'}
+document.getElementById('searchInput').addEventListener('keydown',e=>{if(e.key==='Enter')searchPosts()});
+</script>
+</body></html>
